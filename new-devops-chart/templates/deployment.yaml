@@ -17,3 +17,5 @@ spec:
       containers:
         - name: {{ .Values.devops.name }}
           image: {{ .Values.devops.image.name }}:{{ .Values.devops.image.tag }}
+imagePullSecrets:
+  - name: acr-secret
