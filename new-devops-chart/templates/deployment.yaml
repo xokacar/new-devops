@@ -15,7 +15,7 @@ spec:
         app: enhanced-devops
     spec:
       containers:
-        - name: {{ .Values.devops.name }}
-          image: {{ .Values.devops.image.name }}:{{ .Values.devops.image.tag }}
+        - name: enhanced-devops
+          image: enhanced-devops:latest
 imagePullSecrets:
   - name: acr-secret

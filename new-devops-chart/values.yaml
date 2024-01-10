@@ -1,14 +1,14 @@
 replicas: 2
-devops:
-  name: devops
+enhanced-devops:
+  name: enhanced-devops
   image:
-    name: devops
+    name: crmasraf001.azurecr.io/enhanced-devops
     tag: 'latest'
     repository: crmasraf001.azurecr.io/enhanced-devops
     imagePullPolicy: Always
 
 imagePullSecrets:
-  - name: acr-secret
+  - name: acr-secret2
 
 service:
   type: ClusterIP
