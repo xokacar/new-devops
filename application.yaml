@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: auto-latest
+  name: new-devops
   namespace: argocd
   annotations:
     argocd-image-updater.argoproj.io/image-list: enhanced-devops=https://crmasraf001.azurecr.io/enhanced-devops
