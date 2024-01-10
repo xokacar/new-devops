@@ -15,7 +15,7 @@ spec:
   project: default
   source: 
     repoURL: https://github.com/xokacar/new-devops
-    path: ./new-latest-chart
+    path: ./new-devops-chart
     targetRevision: HEAD
     helm:
       valueFiles:
