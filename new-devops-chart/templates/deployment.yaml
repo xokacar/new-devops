@@ -1,21 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: enhanced-devops
+  name: new-devops-deployment
   labels:
-    app: enhanced-devops
+    app: new-devops
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: enhanced-devops
+      app: new-devops
   template:
     metadata:
       labels:
-        app: enhanced-devops
+        app: new-devops
     spec:
       containers:
         - name: enhanced-devops
           image: enhanced-devops:latest
-imagePullSecrets:
-  - name: acr-secret
+          ports:
+            - containerPort: 80
+      imagePullSecrets:
+        - name: acr-secret
