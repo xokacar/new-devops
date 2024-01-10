@@ -2,7 +2,7 @@ replicas: 2
 devops:
   name: devops
   image:
-    name: crmasraf001.azurecr.io/enhanced-devops
+    name: devops
     tag: 'latest'
     repository: crmasraf001.azurecr.io/enhanced-devops
     imagePullPolicy: Always
